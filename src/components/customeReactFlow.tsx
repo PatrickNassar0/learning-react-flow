@@ -55,15 +55,15 @@ export default function CustomeFlow() {
   const [colorMode, setColorMode] = useState<'light' | 'dark' | 'system' | undefined>('system');
 
   const onNodesChange = useCallback(
-    (changes) => setNodes((nds) => applyNodeChanges(changes, nds)),
+    (changes:any) => setNodes((nds) => applyNodeChanges(changes, nds)),
     [],
   );
   const onEdgesChange = useCallback(
-    (changes) => setEdges((eds) => applyEdgeChanges(changes, eds)),
+    (changes:any) => setEdges((eds) => applyEdgeChanges(changes, eds)),
     [],
   );
   const onConnect = useCallback(
-    (params) => setEdges((eds) => addEdge(params, eds)),
+    (params:any) => setEdges((eds) => addEdge(params, eds)),
     [],
   )
 
