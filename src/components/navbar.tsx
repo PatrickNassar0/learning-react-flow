@@ -8,7 +8,10 @@ export default function Navbar() {
                 Logo
             </Link>
             <Link href='/reactFlow' className='hover:underline'>
-                React flow
+                React Flow
+            </Link>
+            <Link href='/customeReactFlow' className='hover:underline'>
+                Custome React Flow
             </Link>
         </nav>
     )
