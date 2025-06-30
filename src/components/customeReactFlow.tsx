@@ -91,6 +91,7 @@ export default function CustomeFlow() {
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
         nodeTypes={nodeTypes}
+        snapToGrid={true}
         fitView
       >
         <Background />

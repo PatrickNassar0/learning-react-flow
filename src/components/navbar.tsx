@@ -7,12 +7,19 @@ export default function Navbar() {
             <Link href='/'>
                 Logo
             </Link>
-            <Link href='/reactFlow' className='hover:underline'>
-                React Flow
-            </Link>
-            <Link href='/customeReactFlow' className='hover:underline'>
-                Custome React Flow
-            </Link>
+            <div className='flex items-center justify-end gap-4'>
+                <Link href='/reactFlow' className='hover:underline'>
+                    React Flow
+                </Link>
+                <p>-</p>
+                <Link href='/customeReactFlow' className='hover:underline'>
+                    Custome React Flow
+                </Link>
+                <p>-</p>
+                <Link href='/createNodes' className='hover:underline'>
+                    Create Nodes
+                </Link>
+            </div>
         </nav>
     )
 }
